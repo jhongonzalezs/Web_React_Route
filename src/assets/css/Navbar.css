@@ -1,0 +1,169 @@
+header {
+    background-color: cadetblue;
+
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.logo {
+    margin-left: 20px;
+    width: 200px;
+}
+
+.menu .navbar ul {
+    list-style: none;
+    margin-right: 90px;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 16px;
+    color: #272D38;
+    display: block;
+    text-transform: uppercase;
+}
+
+#menu {
+    display: none;
+}
+.menu-icono {
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 120px 0 150px 0;
+}
+
+.header-txt {
+    width: 60%;
+    padding-right: 25px;
+    margin-left: 20px;
+}
+
+.header-txt h1 {
+    font-size: 55px;
+    line-height: 70px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.header-txt p {
+    font-size: 18px;
+    color: #a0a0a0
+}
+
+.header-img {
+    width: 50%;
+    margin-left: 120px;
+}
+
+.buss {
+    width: 100%;
+}
+
+.botones {
+    display: flex;
+    margin-top: 50px;
+}
+
+.btn-1 {
+    display: inline-block;
+    border: 1px solid #FDFDFD;
+    padding: 10px 35px;
+    margin-right: 20px;
+    color: #FDFDFD;
+    border-radius: 25px;
+}
+
+.menu-nav {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+
+@media(max-width: 1024px ) {
+
+    .menu {
+        padding: 25px;
+    }
+
+    .menu label {
+        display: initial;
+    }
+
+    .menu .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: cadetblue;
+        display: none;
+    }
+
+    .menu .navbar ul li {
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .header-content {
+        flex-direction: column;
+        padding: 180px 30px 30px 30px;
+    }
+
+    .header-txt {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .header-txt h1 {
+        font-size: 45px;
+    }
+
+    .header-img {
+        width: 100%;
+        margin-top: 45px;
+        margin-right: 120px;
+    }
+    
+    .botones {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-1 {
+        margin: 0 0 20px 0;
+    }
+    
+
+}

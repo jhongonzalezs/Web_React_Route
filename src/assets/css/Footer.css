@@ -1,0 +1,15 @@
+footer{
+    bottom: 0;
+    margin-top: 10px;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+footer a {
+    margin-right: 10px; /* Ajusta el valor según el espacio que desees */
+}

@@ -1,0 +1,41 @@
+.about-us-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .select-container {
+    position: relative;
+  }
+  
+  .select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* quita las flechas del select */
+  }
+  
+  .select:focus {
+    outline: none;
+  }
+  
+  .select-container::after {
+    content: '\25BC'; /* flecha hacia abajo */
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+  }
+  
+  .employee-details {
+    margin-top: 20px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .select-container::after {
+      right: 5px;
+    }
+  }
+  
